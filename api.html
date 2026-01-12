@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API DATA FETCHING</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./api.css">
+</head>
+<body id="body">
+
+<header>
+    <h3> 🌎 Where in the world?</h3>
+    <div class="darkmode" id="darkmode">
+      <h3 id="h3"> 🌙Dark Mode</h3>
+    </div>
+</header>
+
+<div class="search-bar" id="searchBar">
+  <input type="text" id="searchInput" placeholder="    🔎 Search Country..">
+</div>
+
+<div id="countries-container" class="countries"></div>
+
+<div class="pagination">
+    <button id="prev">⬅️Previous</button>
+    <button id="page-number">1</button>
+    <button id="next">➡️Next</button>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <img id="modalFlag">
+    <h2 id="modalName"></h2>
+    <p><strong>Capital:</strong> <span id="modalCapital"></span></p>
+    <p><strong>Population:</strong> <span id="modalPopulation"></span></p>
+    <p><strong>Region:</strong> <span id="modalRegion"></span></p>
+    <p><strong>Subregion:</strong> <span id="modalSubregion"></span></p>
+  </div>
+</div>
+
+<script src="./api.js"></script>
+</body>
+</html>
