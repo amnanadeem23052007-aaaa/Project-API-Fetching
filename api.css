@@ -138,3 +138,69 @@ header{
   font-size: 25px;
   cursor: pointer;
 }
+/* ========================= */
+/*        RESPONSIVE         */
+/* ========================= */
+
+/* 📱 Mobile Devices */
+@media (max-width: 600px) {
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .search-bar {
+    padding: 15px;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .countries {
+    padding: 0 20px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .card {
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pagination button {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+
+/* 📲 Tablets */
+@media (max-width: 900px) {
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .countries {
+    padding: 0 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+}
